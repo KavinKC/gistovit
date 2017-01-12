@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  joy: 1.5
+  disgust: 1.5
+  anger: 1.5
+  sad: 1.5
+  fear: 1.5
+
+two:
+  joy: 1.5
+  disgust: 1.5
+  anger: 1.5
+  sad: 1.5
+  fear: 1.5

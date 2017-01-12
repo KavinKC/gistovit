@@ -1,0 +1,19 @@
+<h1>Queries#new</h1>
+<p>Find me in app/views/queries/new.html.erb</p>
+<%= form_for @query do |f| %>
+    <%= f.text_area :text %>
+    <%= f.submit %>
+<% end %>
+<% if @display_query.emotion.present? %>
+<p> TEXT: <%= @display_query.text %> </p>
+<p> EMOTIONS </p>
+    <ul> joy         <%= @display_query.emotion.joy %>      </ul>
+    <ul> sad         <%= @display_query.emotion.sad %>      </ul>
+    <ul> anger       <%= @display_query.emotion.anger %>    </ul>
+    <ul> fear        <%= @display_query.emotion.fear %>     </ul>
+    <ul> disgust     <%= @display_query.emotion.surprise %>  </ul>
+
+<p> SENTIMENT </p>
+    <ul> sentiment   <%= Indico.sentiment_hq(@display_query.text) %></ul>
+
+<% end %>
